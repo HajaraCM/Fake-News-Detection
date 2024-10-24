@@ -132,3 +132,24 @@ Once the image is built, you can run the container with the following command:
 docker run -p 5000:5000 fake-news-api
 ```
 The -p 5000:5000 flag maps port 5000 on your local machine to port 5000 in the Docker container, allowing you to access the Flask app at http://127.0.0.1:5000/.
+# **How to Run the Project**
+## **Prerequisites:**
+- Python 3.x installed.
+- Docker installed (optional, but recommended for deployment).
+## **Install the necessary Python libraries:**
+```
+pip install -r requirements.txt
+```
+## **Steps:**
+1. ### **Clone the repository:**
+```
+git clone https://github.com/HajaraCM/Fake-News-Detection.git
+cd Fake-News-Detection
+```
+2. ### **Run the Flask API:**
+```
+python app.py
+```
+Access the Web Interface: Open your browser and go to http://127.0.0.1:5000/. Input a news article and click "Submit" to see if it’s real or fake.
+
+
