@@ -112,7 +112,7 @@ Integrated MLflow for efficient tracking of the machine learning experiments. ML
 - Save the model parameters, evaluation metrics, and results of each experiment.
 - Compare multiple runs to determine the best-performing model for deployment.
 - Version and save the model for future use.
-**SVM Table**
+### **SVM Table**
 ![SVM Table](https://github.com/user-attachments/assets/abdc3526-45aa-40be-aab9-048fe54e92fc)
 
 ## **Flask API Development**
