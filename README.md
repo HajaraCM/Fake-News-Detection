@@ -75,18 +75,13 @@ Proper preprocessing of textual data is crucial for achieving accurate predictio
 ## **Machine Learning Models**
 
 Several machine learning algorithms were used to build and compare different classifiers for fake news detection. The following models were implemented:
-
 - **Logistic Regression**: A simple yet effective baseline algorithm.
   ```python
-  LogisticRegression()
+LogisticRegression()
   ``` 
 - **K-Nearest Neighbors (KNeighbors)**: A non-parametric method used for classification based on similarity measures.
 ```python
 KNeighborsClassifier()
-```
-- **Support Vector Classifier (SVC)**: A powerful classifier for separating classes using hyperplanes.
-```python
-SVC()
 ```
 - **Decision Tree Classifier**: A tree-based method that builds decision rules for classification.
 ```python
@@ -131,7 +126,7 @@ To build the Docker image, run the following command in the terminal from the pr
 ```
 docker build -t fake-news .
 ```
-2. #### **Run the Docker Container*8
+2. #### **Run the Docker Container**
 Once the image is built, you can run the container with the following command:
 ```
 docker run -p 5000:5000 fake-news-api
