@@ -112,13 +112,9 @@ Integrated MLflow for efficient tracking of the machine learning experiments. ML
 - Save the model parameters, evaluation metrics, and results of each experiment.
 - Compare multiple runs to determine the best-performing model for deployment.
 - Version and save the model for future use.
-### **Accuracy Plot**
 ![Screenshot 2024-10-14 132816](https://github.com/user-attachments/assets/17a262a8-3a8c-4466-b860-de877f79250b)
-### **f1 Score Plot**
 ![Screenshot 2024-10-14 132907](https://github.com/user-attachments/assets/fe7467ec-1789-4cf3-9f43-d9d71ac0e68b)
-### **Recall Plot**
 ![Screenshot 2024-10-14 132945](https://github.com/user-attachments/assets/dfe36c6d-6596-419a-88b1-780c7db94d94)
-### **Precision Plot**
 ![Screenshot 2024-10-14 133018](https://github.com/user-attachments/assets/38883ca1-2dc6-4515-b5fe-4c30b6d773ef)
 
 ### **SVM Table**
