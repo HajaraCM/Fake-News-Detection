@@ -101,7 +101,7 @@ LGBMClassifier()
 ```
 - **Support Vector Machine (SVM)**: Selected as the final model due to its superior accuracy, precision, and recall compared to other models.
 ```python
-SVC(kernel='linear')
+SVC(kernel='rbf')
 ```
 I used MLflow to track and record the results of these machine learning experiments, making it easier to compare models based on their accuracy, precision, recall, and F1 score.
 
