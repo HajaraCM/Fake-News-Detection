@@ -79,3 +79,61 @@ Several machine learning algorithms were used to build and compare different cla
 - **Logistic Regression**: A simple yet effective baseline algorithm.
   ```python
   LogisticRegression()
+  ``` 
+- **K-Nearest Neighbors (KNeighbors)**: A non-parametric method used for classification based on similarity measures.
+```python
+KNeighborsClassifier()
+```
+- **Support Vector Classifier (SVC)**: A powerful classifier for separating classes using hyperplanes.
+```python
+SVC()
+```
+- **Decision Tree Classifier**: A tree-based method that builds decision rules for classification.
+```python
+DecisionTreeClassifier()
+```
+- **Random Forest Classifier***: An ensemble method that improves the performance of decision trees by combining multiple trees.
+```python
+RandomForestClassifier()
+```
+- **XGBoost Classifier (XGB)**: An optimized gradient boosting algorithm with high performance for large datasets.
+```python
+XGBClassifier(use_label_encoder=False)
+```
+- **LightGBM Classifier (LGBM)**: Another gradient boosting technique that is highly efficient for large datasets and can handle imbalanced classes well.
+```python
+LGBMClassifier()
+```
+- **Support Vector Machine (SVM)**: Selected as the final model due to its superior accuracy, precision, and recall compared to other models.
+```python
+SVC(kernel='linear')
+```
+I used MLflow to track and record the results of these machine learning experiments, making it easier to compare models based on their accuracy, precision, recall, and F1 score.
+
+## **Experiment Tracking (MLflow)**
+Integrated MLflow for efficient tracking of the machine learning experiments. MLflow allowed us to:
+
+- Log the performance of various models.
+- Save the model parameters, evaluation metrics, and results of each experiment.
+- Compare multiple runs to determine the best-performing model for deployment.
+- Version and save the model for future use.
+## **Flask API Development**
+Once the best-performing model was identified, we deployed it using Flask to build a simple, user-friendly web API. The API allows users to input a news article and receive a prediction indicating whether the news is fake or real.
+
+- Front-end: Built using HTML and CSS to create a clean and minimalistic interface where users can input news articles.
+- Back-end: The Flask server handles requests, runs the fake news detection model, and returns the classification results to the user.
+## **Docker Containerization**
+I have included a Dockerfile in this project, allowing you to build and run the application in a containerized environment. This ensures the project runs consistently across different systems.
+
+### **Building and Running the Docker Image**
+1. #### **Build the Docker Image**
+To build the Docker image, run the following command in the terminal from the project directory:
+```
+docker build -t fake-news .
+```
+2. #### **Run the Docker Container*8
+Once the image is built, you can run the container with the following command:
+```
+docker run -p 5000:5000 fake-news-api
+```
+The -p 5000:5000 flag maps port 5000 on your local machine to port 5000 in the Docker container, allowing you to access the Flask app at http://127.0.0.1:5000/.
