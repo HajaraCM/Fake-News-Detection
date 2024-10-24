@@ -152,4 +152,5 @@ python app.py
 ```
 Access the Web Interface: Open your browser and go to http://127.0.0.1:5000/. Input a news article and click "Submit" to see if it’s real or fake.
 
-
+# **Conclusion**
+The Fake News Detection project successfully combines the power of NLP and machine learning to solve the pressing issue of fake news. By employing advanced text processing techniques and testing multiple algorithms, we achieved a robust classification model that can be accessed through a simple web interface.
