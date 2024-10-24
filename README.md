@@ -76,8 +76,9 @@ Proper preprocessing of textual data is crucial for achieving accurate predictio
 
 Several machine learning algorithms were used to build and compare different classifiers for fake news detection. The following models were implemented:
 - **Logistic Regression**: A simple yet effective baseline algorithm.
-  ```python
+```python
 LogisticRegression()
+```
 - **K-Nearest Neighbors (KNeighbors)**: A non-parametric method used for classification based on similarity measures.
 ```python
 KNeighborsClassifier()
