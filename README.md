@@ -112,6 +112,8 @@ Integrated MLflow for efficient tracking of the machine learning experiments. ML
 - Save the model parameters, evaluation metrics, and results of each experiment.
 - Compare multiple runs to determine the best-performing model for deployment.
 - Version and save the model for future use.
+![SVM Table](https://github.com/user-attachments/assets/abdc3526-45aa-40be-aab9-048fe54e92fc)
+
 ## **Flask API Development**
 Once the best-performing model was identified, we deployed it using Flask to build a simple, user-friendly web API. The API allows users to input a news article and receive a prediction indicating whether the news is fake or real.
 
