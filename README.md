@@ -78,7 +78,6 @@ Several machine learning algorithms were used to build and compare different cla
 - **Logistic Regression**: A simple yet effective baseline algorithm.
   ```python
 LogisticRegression()
-  ``` 
 - **K-Nearest Neighbors (KNeighbors)**: A non-parametric method used for classification based on similarity measures.
 ```python
 KNeighborsClassifier()
